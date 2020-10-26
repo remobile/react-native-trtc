@@ -4,8 +4,6 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Base64;
 
-import androidx.annotation.Nullable;
-
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -305,7 +303,7 @@ public class TRTCModule extends ReactContextBaseJavaModule {
 
     private void sendEvent(ReactContext reactContext,
                            String eventName,
-                           @Nullable WritableMap params) {
+                           WritableMap params) {
         reactContext
                 .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
                 .emit(eventName, params);

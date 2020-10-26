@@ -1,5 +1,5 @@
 {
-  "name": "rn-trtc",
+  "name": "react-native-trtc",
   "peerDependencies": {
     "react": "16.11.0",
     "react-native": ">=0.60"
